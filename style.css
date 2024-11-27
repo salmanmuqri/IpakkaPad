@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+body {
+  background-color: #1b1b1e;
+  color: rgb(229, 193, 193);
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.center {
+  animation: fadeIn 1.5s;
+  animation-fill-mode: forwards;
+  
+  margin: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+  border: 4px solid rgb(165, 9, 9);
+  border-radius: 25px;
+  background: rgba(74, 231, 39, 0.8);
+  box-shadow: 0px 0px 20px rgba(247, 3, 3, 0.8);
+  padding: 25px;
+  flex-grow: 1;
+}
+
+
+footer {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  position: fixed;     
+  bottom: 0px; 
+  padding: 0px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #40ff00;
+}
+
+.buttons {
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.link {
+  width: 50px;
+  height: 50px;
+}
+
+canvas {
+  display: block;
+}
+
+.logos{
+  width:150px;
+  height:150px;
+  gap: 70px;
+  border-radius:50%;
+  overflow:hidden;
+}
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  flex: 1;
+}
+.circular-image {
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+@media (max-width: 768px) {
+  .center {
+    padding: 15px;
+    margin-bottom: 50px;
+  }
+  
+  .circular-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  .logos a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer {
+    padding: 20px 0;
+    position: absolute;
+  }
+
+  body {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .center {
+    padding: 10px;
+  }
+
+  .circular-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  p {
+    font-size: 5vw;
+  }
+
+  footer {
+    padding: 10px 0;
+    position: absolute;
+  }
+
+  body {
+    padding-bottom: 10px;
+  }
+
+  .logos a {
+    width: 35px;
+    height: 35px;
+  }
+}
